@@ -1,0 +1,82 @@
+class student:
+    def __init__(self, name, dress, clean, here, cell):
+        self.name = name
+        self.dress = dress
+        self.clean = clean
+        self.here = here
+        self.cell = cell
+    def assign_dress(self, dress):
+        self.dress = dress
+    def assign_clean(self, clean):
+        self.clean = clean
+    def assign_here(self, here):
+        self.here = here
+    def assogm_here(self, cell):
+        self.cell = cell
+    def display_properties(self):
+        print("Properties of the User:")
+        print("Name:", self.name)
+        print("Days out of dress code:", self.dress)
+        print("Days absent:", self.here)
+        print("Days without cleaning:", self.clean)
+        print("Days with cell phone out:", self.cell)
+james = student('james', 'NA', 'NA','NA', 'NA')
+adam = student('adam', 'NA', 'NA','NA', 'NA')
+cole = student('cole', 'NA', 'NA','NA', 'NA')
+brian = student('brian', 'NA', 'NA','NA', 'NA')
+david = student('david', 'NA', 'NA','NA', 'NA')
+john = student('john', 'NA', 'NA','NA', 'NA')
+chandler = student('chandler', 'NA', 'NA','NA', 'NA')
+pearson = student('pearson', 'NA', 'NA','NA', 'NA')
+dwayne = student('dwane', 'NA', 'NA','NA', 'NA')
+gavin = student('gavin', 'NA', 'NA','NA', 'NA')
+ryan = student('ryan', 'NA', 'NA','NA', 'NA')
+shahood = student('shahood', 'NA', 'NA','NA', 'NA')
+chris = student('chris', 'NA', 'NA','NA', 'NA')
+aiden = student('aiden', 'NA', 'NA','NA', 'NA')
+jaiden = student('jaiden', 'NA', 'NA','NA', 'NA')
+leo = student('leo', 'NA', 'NA','NA', 'NA')
+marcos = student('marcos', 'NA', 'NA','NA', 'NA')
+muntag = student('muntag', 'NA', 'NA','NA', 'NA')
+nate = student('nate', 'NA', 'NA','NA', 'NA')
+mason = student('mason', 'NA', 'NA','NA', 'NA')
+room = [james, adam, cole, brian, david, john, chandler, pearson, dwayne, gavin, ryan, shahood, chris, aiden, jaiden, leo, marcos, muntag, mason, nate]
+students= ["james", "adam", "cole", "brian", "david", "john", "chandler", "pearson", "dwayne", "gavin", "ryan", "shahood", "chris", "aiden", "jaiden", "leo", "marcos", "muntag", "robert", "jacob", "mason", "nate"]
+def display():
+    print ("Enter the name of the student you'd like to view.")
+    Exname = str(input())
+    Ndex = students.index(Exname)
+    display1 = room[Ndex]
+    display1.display_properties()
+    
+def enter():
+    print ("Enter the name of the student you'd like to edit.")
+    Exname = str(input())
+    Ndex = students.index(Exname)
+    enter1 = room[Ndex]
+    print ("What would you like to change? \n1. Absent \n2. Dress Code \n3. Phone \n4. Saftey Procedures")
+    answ1 = int(input())
+    if (answ1 == 1):
+        print ("What date did they miss?")
+        here = str(input())
+        student.assign_here(here)
+    if (answ1 == 2):
+        
+    if (answ1 == 3):
+        
+    if (answ1 == 4):
+
+def main():
+    y = 1
+    while (y == 1):
+        print("1. Display Records \n2. Enter Records \n3. Quit")
+        answ = int(input())
+        if (answ == 1):
+            display()
+        if (answ == 2):
+            enter()
+        if (answ == 3):
+            y = 0
+            quit()
+print("==========Class Records==========")
+main()
