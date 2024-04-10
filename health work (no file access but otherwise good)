@@ -59,12 +59,19 @@ def enter():
     if (answ1 == 1):
         print ("What date did they miss?")
         here = str(input())
-        student.assign_here(here)
-    if (answ1 == 2):
-        
-    if (answ1 == 3):
-        
-    if (answ1 == 4):
+        enter1.assign_here(here)
+    elif (answ1 == 2):  
+        print ("What date did they miss dress code?")    
+        dress = str(input())
+        enter1.assign_dress(dress)
+    elif (answ1 == 3):
+        print ("What date did they use their phone at an inaproppriate time?")
+        cell = str(input())
+        enter1.assign_cell(cell)
+    elif (answ1 == 4):
+        print ("What date did they mess up their saftey procedures?")
+        clean = str(input())
+        enter1.assign_clean(clean)
 
 def main():
     y = 1
@@ -76,6 +83,14 @@ def main():
         if (answ == 2):
             enter()
         if (answ == 3):
+            y = 0
+            quit()
+        print ("Would you like to continue?\n1. Continue\n2. Quit")
+        answ2 = int(input())
+        if (answ2 == 1):
+            print ("-------Class Records-------")
+            y = 1
+        if (answ2 == 2):
             y = 0
             quit()
 print("==========Class Records==========")
