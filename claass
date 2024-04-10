@@ -1,0 +1,45 @@
+class Student:
+    def __init__(self, name, dress, clean, here, cell):
+        self.name = name
+        self.dress = dress
+        self.clean = clean
+        self.here = here
+        self.cell = cell
+    def assign_dress(self, dress):
+        self.dress = dress
+    def assign_clean(self, clean):
+        self.clean = clean
+    def assign_here(self, here):
+        self.here = here
+    def assogm_here(self, cell):
+        self.cell = cell
+    def display_properties(self):
+        print("Properties of the User:")
+        print("Name:", self.name)
+        print("Days out of dress code:", self.dress)
+        print("Days absent:", self.here)
+        print("Days without cleaning:", self.clean)
+        print("Days with cell phone out:", self.cell)
+room = ["james", "adam", "cole", "brian", "david", "john", "chandler", "pearson", "dwayne", "gavin", "ryan", "shahood", "chris", "aidan", "jaiden", "leo", "marcos", "muntag", "mason", "nathon"]
+Class = []
+for x in range(len(room)):
+    namePick = room.pop(-1)
+    Class.append(Student(namePick, "", "", "", ""))
+def Display():
+    print ("Enter the name of the student you'd like to review.")
+    Exname = input()
+    Exname = str(input())
+    room.index(Exname)
+    
+def Enter():
+
+def main():
+    print("==========Class Records========== \n1. Display Records \n2. Enter Records \n3. Quit")
+    answ = int(input())
+    if (answ == 1):
+        
+    if (answ == 2):
+
+    if (answ == 3):
+        quit()
+main()
